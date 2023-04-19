@@ -1,0 +1,427 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* STYLING THE HOME PAGE */
+
+#home {
+  background-color: #dbdada;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0;
+}
+.writeup {
+  height: 700px;
+  width: 1000px;
+  border-radius: 50px;
+  background-image: url("images/photo6.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  display: grid;
+}
+.heading1,
+.heading3 {
+  position: absolute;
+  font-size: 3rem;
+  color: #2e829e;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #242323;
+  padding-bottom: 30px;
+  width: 300px;
+  justify-self: center;
+  display: flex;
+  top: 20%;
+  left: 37%;
+  opacity: 0.7;
+  line-height: 1;
+}
+
+.heading3 {
+  text-align: center;
+  margin-top: 50px;
+  top: 40%;
+  font-size: 2rem;
+}
+.sub-title-a,
+.sub-title-d {
+  color: #5f9aad;
+  text-shadow: 3px 0 #2d4b55;
+  position: absolute;
+  font-size: 2rem;
+  width: 400px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin: 30px 0 50px;
+  background-color: #bdbaba;
+  text-align: center;
+}
+.analog,
+.digital {
+  padding: 10px 20px;
+  position: absolute;
+  top: 65%;
+  background-color: #5f9aad;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+  border: 2px solid #5f9aad;
+  font-family: "Arvo", cursive;
+  font-weight: bold;
+  font-size: 18px;
+  color: #30373a;
+  border-radius: 12px;
+}
+.analog:hover,
+.digital:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.digital {
+  left: 54%;
+}
+.analog {
+  left: 34%;
+}
+.brand-1 {
+  position: absolute;
+  color: black;
+  text-align: center;
+  left: 49%;
+  top: 79%;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+/* STYLING THE ANALOG CLOCK */
+#aclock {
+  padding: 10px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-color: #f1eded;
+  overflow: hidden;
+}
+.container {
+  margin: 100px 0 80px;
+  position: relative;
+  width: 400px;
+  background-image: url("images/wood.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  box-shadow: 1px 5px 10px;
+}
+.clock::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #2f363e;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.frame {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-image: url("images/wood.jpeg");
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75),
+    inset 5px 5px 35px rgba(0, 0, 0, 0.5);
+}
+.inner-frame {
+  border: 3px solid #ffefa0;
+  background-image: linear-gradient(90deg, #fff9b0 30%, #ffefa0 70%);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  box-shadow: inset 5px 5px 10px #ffd57e;
+}
+.clock {
+  position: absolute;
+  align-items: center;
+  top: 24px;
+  left: 24px;
+  height: 350px;
+  width: 350px;
+  background: #ffff;
+  border-radius: 50%;
+  box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 60px rgba(0, 0, 0, 0.5);
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 2.3rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+.clock .number1 {
+  transform: rotate(30deg);
+}
+.clock .number2 {
+  --rotation: 60deg;
+}
+.clock .number3 {
+  --rotation: 90deg;
+}
+.clock .number4 {
+  --rotation: 120deg;
+}
+.clock .number5 {
+  --rotation: 150deg;
+}
+.clock .number6 {
+  --rotation: 180deg;
+}
+.clock .number7 {
+  --rotation: 210deg;
+}
+.clock .number8 {
+  --rotation: 240deg;
+}
+.clock .number9 {
+  --rotation: 270deg;
+}
+.clock .number10 {
+  --rotation: 300deg;
+}
+.clock .number11 {
+  --rotation: 330deg;
+}
+
+.clock .hand {
+  --rotation: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom; /* we use this to set were we want the transform to be applied to  */
+  transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+  z-index: 10;
+  border-radius: 50%;
+}
+.sec {
+  width: 3px;
+  height: 45%;
+  background-color: red;
+}
+.min {
+  width: 10px;
+  height: 40%;
+  background-color: black;
+}
+.hour {
+  width: 10px;
+  height: 30%;
+  background-color: black;
+}
+
+.brand-2 {
+  position: absolute;
+  color: black;
+  text-align: center;
+  left: 40%;
+  top: 20px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: 0.7rem;
+  opacity: 0.45;
+}
+i {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.day {
+  padding: 30px 0 20px 5px;
+  display: flex;
+  color: #000;
+}
+.today {
+  text-align: center;
+  font-size: 2rem;
+  border-right: 3px solid #000;
+  padding: 10px 20px;
+}
+#todaysDate {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  width: 300px;
+  font-size: larger;
+}
+
+/* STYLING THE DIGITAL CLOCK */
+#dclock {
+  display: grid;
+  overflow: hidden;
+  background-color: #fff;
+  overflow: hidden;
+  height: 470px;
+  justify-content: center;
+}
+
+.sub-title-d {
+ margin: 60px;
+}
+.dcontainer {
+  margin: 80px 0;
+  top: 15%;
+  position: relative;
+}
+
+.dframe1 {
+  margin: auto;
+  position: relative;
+  height: 214px;
+  width: 520px;
+  background-color: #bb9058;
+  border-radius: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 56px;
+  box-shadow: inset -2px 2px 70px 0 #784f2b;
+}
+
+.digi-clock {
+  position: absolute;
+  height: 200px;
+  width: 500px;
+  background-color: black;
+  top: 7%;
+  border-radius: 20px;
+  border: 10px solid #784f2b;
+}
+#input {
+  font-family: "DS-Digital", sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  margin: 40px 0;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  background-color: #4d4d4d;
+}
+.end-text,
+.icons,
+.copyright {
+  text-align: center;
+  color: #b9b5b5;
+}
+.end-text {
+  font-size: 15px;
+  margin: 0 0 20px;
+  padding-top: 30px;
+}
+.end-text.two {
+  padding-top: 0;
+  margin-bottom: 30px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.footer-link {
+  padding-right: 40px;
+}
+.contact {
+  width: 50px;
+}
+.copyright {
+  margin-top: 30px;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 950px) {
+  .writeup {
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+  }
+  .wrap {
+    width: 280px;
+    height: 400px;
+    position: relative;
+    top: 12%;
+    left: 3%;
+  }
+  .heading1,
+  .heading3 {
+    font-size: 35px;
+    left: 0;
+  }
+  .heading1 {
+    top: 10%;
+    left: 3%;
+  }
+  .heading3 {
+    text-align: left;
+    margin: 30px 0;
+    font-size: 26px;
+    left: 3%;
+  }
+  .analog,
+  .digital {
+    margin-top: 50px;
+    width: 110px;
+    height: 50px;
+    font-size: 1rem;
+    padding: 0 2px;
+  }
+  .analog {
+    left: 5%;
+  }
+  .digital {
+    left: 60%;
+  }
+  .brand-1 {
+    display: none;
+  }
+  .dcontainer {
+    top: 10%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
