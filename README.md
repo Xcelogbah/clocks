@@ -1,2 +1,2 @@
 # clocks
-clock designs using html, css and html
+clock designs using html, css and javascript.
