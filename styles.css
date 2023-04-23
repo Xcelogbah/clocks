@@ -12,11 +12,10 @@ body {
 .header {
   border-bottom: 1px solid #b9b9b7;
   margin: 0 0 50px 0;
- box-shadow: 10px 0 5px #000;
-
+  box-shadow: 10px 0 5px #000;
 }
 .nav {
-  padding: 25px  10px;
+  padding: 25px 10px;
   font-weight: bold;
   color: #447080;
 }
@@ -44,9 +43,9 @@ body {
 .heading3 {
   position: absolute;
   font-size: 3rem;
-  color:  #044f68;
+  color: #044f68;
   text-shadow: 3px 0 #000;
- 
+
   padding-bottom: 30px;
   width: 300px;
   justify-self: center;
@@ -92,7 +91,7 @@ body {
   font-size: 1.5rem;
   font-weight: bolder;
 }
-.main-box{
+.main-box {
   display: flex;
 }
 
@@ -173,7 +172,7 @@ body {
   height: 100%;
   text-align: center;
   transform: rotate(var(--rotation));
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   color: #000000;
   font-weight: 600;
 }
@@ -181,62 +180,67 @@ body {
 .clock .number1 {
   transform: rotate(30deg);
 }
-.number1 div{
+.number1 div {
   transform: rotate(-30deg);
 }
 .clock .number2 {
   --rotation: 60deg;
 }
-.number2 div{
+.number2 div {
   transform: rotate(-60deg);
 }
 .clock .number3 {
   --rotation: 90deg;
 }
-.number3 div{
+.number3 div {
   transform: rotate(-90deg);
 }
 .clock .number4 {
   --rotation: 120deg;
 }
-.number4 div{
+.number4 div {
   transform: rotate(-120deg);
 }
 .clock .number5 {
   --rotation: 150deg;
 }
-.number5 div{
+.number5 div {
   transform: rotate(-150deg);
 }
 .clock .number6 {
   --rotation: 180deg;
 }
-.number6 div{
+.number6 div {
   transform: rotate(-180deg);
 }
 .clock .number7 {
   --rotation: 210deg;
-}.number7 div{
+}
+.number7 div {
   transform: rotate(-210deg);
 }
 .clock .number8 {
   --rotation: 240deg;
-}.number8 div{
+}
+.number8 div {
   transform: rotate(-240deg);
 }
 .clock .number9 {
   --rotation: 270deg;
-}.number9 div{
+}
+.number9 div {
   transform: rotate(-270deg);
 }
 .clock .number10 {
   --rotation: 300deg;
-}.number10 div{
+}
+.number10 div {
   transform: rotate(-300deg);
 }
 .clock .number11 {
   --rotation: 330deg;
-}.number11 div{
+}
+.number11 div {
   transform: rotate(-330deg);
 }
 
@@ -316,7 +320,7 @@ i {
 .digi {
   display: flex;
   justify-content: center;
-  }
+}
 .dcontainer {
   margin: 80px 0;
   top: 25%;
@@ -419,11 +423,12 @@ footer {
   .brand-1 {
     display: none;
   }
-  .main-box{
+  .main-box {
     display: block;
   }
 
-  #aclock, #dclock{
+  #aclock,
+  #dclock {
     width: 100%;
     height: inherit;
   }
@@ -517,17 +522,17 @@ footer {
   .sub-title-d {
     width: 200px;
   }
-/* digital */
-.dframe1 {
-  width: 402px;
-  height:184px;
-}
+  /* digital */
+  .dframe1 {
+    width: 402px;
+    height: 184px;
+  }
 
-.digi-clock {
-  width: 380px;
-  height:170px;
-}
-#input {
-  font-size: 4.5rem;
-}
+  .digi-clock {
+    width: 380px;
+    height: 170px;
+  }
+  #input {
+    font-size: 4.5rem;
+  }
 }
